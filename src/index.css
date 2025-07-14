@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.home-hero img {
+ padding: 20px 10% !important;
+ margin-bottom: 60px;
+}
+
+
+.home-stats-content div{
+    padding: 4% !important;
+}
+
+a{
+  text-decoration: none;
+}
+.stats-eco{
+  display: flex;
+  flex-direction: column;
+}
+.stats-eco img{
+  flex-grow: 1 !important;
+}
+.pricing-prices {
+  display: flex;
+  flex-direction: row;
+
+}
+.pricing-prices div{
+  padding: 5%;
+  text-align: center;
+  width: 50%;
+  border: 1px solid gray;
+}
+.education-content{
+  display: flex;
+  flex-direction: column;
+  margin: 4% 0%;
+  padding: 3%;
+}
+.awards-content ul li{
+  margin: 5% 0%;
+}
+
+/* navbar */
+
+/* .navbar-collapse{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  
+} */
+.navbar-collapse .navbar-nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+/* footer */
+.footer div a{
+  color: black;
+  opacity: 0.7;
+  
+}
+.footer a:hover{
+  color: black;
+   opacity: 1;
+  
+}
