@@ -1,15 +1,14 @@
 import React from "react";
+import {Link} from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary border-bottom">
       <div className="container-fluid row">
-        <a className="navbar-brand col-md-6 col-7 " href="#">
-          <img
+        <Link to="/" className="navbar-brand col-md-6 col-7"><img
             src="media/logo.svg"
             alt="zerodha"
             style={{width:"150px"}}
-          ></img>
-        </a>
+          ></img></Link>
         <div className="col-1 me-5">
         <button
           className="navbar-toggler"
@@ -26,29 +25,29 @@ function Navbar() {
         <div className="collapse navbar-collapse col-md-4" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="#">
+              <Link className="nav-link " aria-current="page" to="/signup">
                 Signup
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/about">
                 About 
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/products">
                 Products
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="#" >
+              <Link className="nav-link " to="/pricing" >
                 Pricing
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="#">
+              <Link className="nav-link " to="/support">
                 Support
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
