@@ -93,3 +93,63 @@ a{
   height : 52px;
   width :199px;
 }
+
+.support-hero {
+  background-color : rgb(56, 126, 209);
+   color :white;
+   height:400px !important;
+   padding: 3% 10%;
+   font-weight: lighter;
+  
+}
+
+/* .support-hero h3{
+  padding: 3%;
+} */
+
+.support-hero a{
+   color :white;
+   text-decoration: underline;
+   margin-left: 10px;
+   
+}
+
+.support-hero-1{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  
+}
+
+.support-hero-1 input{
+  padding: 3%;
+  /* /* width: 90%; */
+  border: none; 
+  height: 100%;
+  
+}
+.support-hero-1  i{
+    color: black;
+    background-color: white;
+    padding: 3%;
+    position: relative;
+     right: 5px; 
+    bottom: 2.5px; 
+    text-align: right;
+    font-size: large;
+    height: 100%;
+}
+.support-hero-2{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.support-hero-2 div{
+  flex-grow: 2;
+}
+.support-hero-2 h4{
+  flex-grow: 1;
+  align-self: flex-end;
+}
