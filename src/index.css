@@ -87,3 +87,9 @@ a{
   
   
 }
+
+/* image in universe */
+.img-content img{
+  height : 52px;
+  width :199px;
+}

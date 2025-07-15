@@ -6,8 +6,8 @@
     padding: 10px;
     font-size: large;
 }
-.btn-class button {
+.btn-class .btn {
   margin: 30px 0px 30px 0px;
-  padding :10px 5% !important;
+  padding :0.7% 8% !important;
   font-size: large !important;
 }
