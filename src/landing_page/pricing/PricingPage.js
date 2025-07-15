@@ -2,9 +2,11 @@ import React from 'react';
 import Brojkerage from './Brojkerage';
 import Hero from './Hero';
 function PricingPage() {
-    return (<> <h1>PricingPage</h1> 
-    <Brojkerage></Brojkerage>
+    return (<> 
+      <div className="container p-md-5">
     <Hero></Hero>
+    <Brojkerage></Brojkerage>
+    </div>
     </>
 
      );
