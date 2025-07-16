@@ -3,7 +3,7 @@
   "name": "A Stock Marketing Platform",
   "icons": [
     {
-      "src": "stockMarket.jpeg",
+      "src": "media/stockMarket.jpeg",
       "sizes": "192x192",
       "type": "image/png"
     }
