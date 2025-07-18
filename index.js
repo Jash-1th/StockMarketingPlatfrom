@@ -2,6 +2,7 @@ require("dotenv").config();
 console.log(process.env.MONGODB_URL);
 const express = require("express");
 const mongoose =  require("mongoose");
+const cors = require("cors");
 
 
 const { HoldingsModel } = require("./model/HoldingsModel");
@@ -18,6 +19,22 @@ mongoose.connect(mongoDb_URL)
 .then(()=>{console.log("connection with mongodb successfully made")})
 .catch((err )=>{console.log(err);});
 
+app.use(cors({
+    origin : "http://localhost:3000",
+    credentials : true
+}))
+
+
+app.get("/holdings" ,async (req , res)=>{
+    let holdings = await HoldingsModel.find({});
+    console.log(holdings);
+    res.json(holdings);
+})
+app.get("/positions" ,async (req , res)=>{
+    let positions = await PositionsModel.find({});
+    console.log(positions);
+    res.json(positions);
+})
 
 
 // //holdings
