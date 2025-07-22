@@ -36,6 +36,17 @@ app.get("/positions" ,async (req , res)=>{
     res.json(positions);
 })
 
+app.post("/newOrder" ,async(req , res)=>{
+    let newOrder =  new OrdersModel({
+        name : req.body.name,
+        mode : req.body.mode,
+        qty : req.body.qty,
+        price : req.body.price
+    });
+    await newOrder.save();
+    console.log(newOrder);
+    res
+})
 
 // //holdings
 // app.get("/addHoldings", async (req, res) => {
